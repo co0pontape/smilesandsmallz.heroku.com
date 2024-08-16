@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'Brown-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brown-Bold'), url('/fonts/Brown-Bold.otf') format('truetype');
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;	
+	width: 100%;
+	height: 100%;
+	font-size: 12pt;
+	font-family: Serif;
+}
+a,a:hover {
+	color: #fff;
+}
+div.label {
+	width: 400px;
+}
+input, textarea {
+	width: 200px;
+}
+input.submit {
+	width: 75px;
+}
+input.short {
+	width: 25px;
+}
+.submit_loader {
+	display: none;
+	background: transparent url('/images/spinner.gif') center center no-repeat;
+	width: 16px;
+	height: 16px;
+}
+#main {
+	width: 1080px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	height: 100%;	
+	overflow: hidden;
+}
+#left {
+	width: 7%;
+	float: left;
+	height: 750px;	
+	background-color: #fff;
+	display: none;
+}
+#left a, #left a:hover {
+	color: #000;
+	text-decoration: none;
+}
+#left div#left_smiles {
+	margin-top: 75px;
+	
+}
+#left div#left_smiles, #left div#left_smallz {
+	cursor: pointer;
+	cursor: hand;	
+	height: 150px;	
+	padding: 175px 5px 0 15px;
+	border-top-left-radius:1em;
+	border-bottom-left-radius:1em; 	
+	font-family: 'Brown-Bold', serif;
+	font-size: 8pt;
+	font-weight: bold;	
+}
+#left div#left_heart {
+	text-align: center;
+	padding-top: 30px;
+}
+#left div#left_smiles {
+	background: #ACADB8 url('/images/smiles.png') center center no-repeat;
+	color: #fff;
+}
+#left div#left_smallz {
+	background: #F8EF85 url('/images/smallz.png') center center no-repeat;
+}
+#left div#left_smiles.selected, #left div#left_smiles:hover {
+	background-image: url('/images/smiles_over.png');
+}
+#left div#left_smallz.selected, #left div#left_smallz:hover {
+	background-image: url('/images/smallz_over.png');
+}
+#center {
+	width: 93%;
+	float: left;	
+	height: auto;	
+	background-color: #fff;	
+}
+#header {
+	width: 100%;
+	background-color: #fff;	
+	font-weight: bold;
+	color: gray;
+	overflow: hidden;
+	height: 75px;
+	font-family: 'Brown-Bold', serif;
+}
+#header a {
+	font-family: 'Brown-Bold', serif;		
+	font-weight: bold;
+	font-size: 10pt;
+	color: #000;
+	text-decoration: none;	
+}
+#header a:hover {
+	text-decoration: underline;	
+}
+#header_logo {
+	float: left;
+	padding-top: 32px;
+	font-weight: bold;
+	font-size: 16pt;
+}
+#header_navbar {
+
+}
+.nav div {
+	float: right;
+	padding: 10px;
+	margin: 20px 10px;
+	cursor: pointer;
+	cursor: hand;
+	width: 75px;
+	text-align: center;
+	border-top: 2px solid #fff;
+}
+.nav div:hover,.nav div.selected {
+	border-top: 2px solid #000;
+}
+#content {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#content_full {
+	margin: 40px;
+	margin-right: 10px;
+	width: 92%;
+}
+#content_left, #content_right.guestbook {
+	float: left;
+	width: 42%;
+	margin: 40px;
+	margin-right: 10px;
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=85);
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.85;
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.85;
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.85;
+}
+#content_right {
+	float: right;
+	text-align: right;
+	width: 45%;
+	text-align: center;	
+	margin: 10px;
+}
+#content_box {
+	background-color: #41596f;
+	border: 2px solid #a0b1c2;
+	color: #fff;	
+	padding: 10px;	
+	text-align: left;
+	line-height: 20px;	
+}
+.page_links {
+	clear: both;
+	width: 100%;
+	height: 40px;
+	margin: 10px 20px;
+}
+.page_link {
+	color: #fff;	
+	padding: 10px;	
+	text-align: left;
+	line-height: 20px;	
+	float: left;
+}
+.content_title {
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 15px;
+	text-transform: uppercase;	
+}
+.content_subtext {
+	padding: 0px 15px;
+	height: auto;
+}
+
+/* ------------------- FOOTER -------------------------- */
+#footer {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding: 10px 0px;
+}
+#footer_left {
+	float: left;
+	padding: 20px 30px;
+}
+#footer_right {
+	float: right;
+}
+/* ------------------- SUB PAGES PAGE -------------------------- */
+#content.home {
+	height: 675px;
+	background: #1D5673 url('/images/home.jpg') center center no-repeat;		
+}
+#wedding_countdown {
+	text-align: center;
+}	
+
+#content.home, #content.wedding, #content.rsvp, #content.guestbook, #content.email, #content.guestlist, #content.gallery, #content.stoutnyc,#content.cruise {
+	background-color: #2E426B;
+}
+
+#left.story, #left.proposal {
+	display: block;
+}
+.image_thumbnail {
+	margin-top: 100px;
+	cursor: pointer;
+	cursor: hand;
+}
+.img {
+	z-index: 0;
+	cursor: pointer;
+	cursor: hand;
+}
+.img a img {
+	position: relative;
+	border: 0 solid #fff;
+}
+img#capcha_refresh{
+	cursor: pointer;
+	cursor: hand;
+}
+
+/* ------------------- WEDDING PARTY PAGE -------------------------- */
+#content.weddingparty {
+	background-color: #2E426B;
+}
+#content_left.weddingparty, #content_right.weddingparty {
+	width: 40%;
+	padding: 20px;
+	border: none;
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=100);
+	/* Older than Firefox 0.9 */
+	-moz-opacity:1.0;
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 1.0;
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 1.0;	
+	margin: 20px 40px;	
+}
+#content_left.weddingparty {
+	margin-right: 10px;
+	background-color: #ACADB8;
+	border: 2px solid #a0b1c2;
+}
+#content_right.weddingparty {
+	margin-left: 10px;	
+	background-color: #F8EF85;
+	border: 2px solid #a0b1c2;
+}
+.content_title.weddingparty {
+	color: #fff;
+	text-align: center;
+}
+#content_right.weddingparty .content_title.weddingparty {
+	color: #000;
+}
+.image_thumbnail.weddingparty {
+	margin-top: 20px;
+}
+.comment_div {
+	border-bottom: 1px solid #fff;
+	padding: 10px;
+}
+.comment_name {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#footer a, #footer a:hover {
+	color: #000;
+}
